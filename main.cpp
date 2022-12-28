@@ -4,20 +4,20 @@ using namespace std;
 
 int main()
 {
-    int num = 0;
+    int n = 0;
     int i;
     string str, s;
     ifstream file;
     file.open("f1.txt");
-    cout << "Enter your string: ";
+    cout << "Vvedite stroku kotoryu nuzhno najti: ";
     cin >> s;
     while (!file.eof()) {
-        num++;
+        n++;
         getline(file,str);
         i = str.find(s);
         if (i != -1)
         {
-            cout << num << endl;
+            cout << n << endl;
         }
 
 
